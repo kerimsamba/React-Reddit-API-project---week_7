@@ -16,23 +16,45 @@
 .App-header {
   background-color: #282c34;
   /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.Cat-chooser {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: static;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  /* flex-direction: column;
+  flex:auto; */
+  font-size: 32px;
+  align-items: left;
+}
+
+.zoom {
+  width: 100px;
+  height: 100px;
+  margin: 32px auto;
+  transition: transform .2s;
+
+}
+
+.zoom:hover {
+  transform: scale(4);
 }

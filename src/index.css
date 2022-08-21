@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+  background-image: linear-gradient(to right, red, rgb(103, 41, 5));
+  position: fixed;
+  width: 100%;
+  height: 20%;
+
+}

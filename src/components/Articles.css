@@ -1,0 +1,39 @@
+.twoBox {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+
+  }
+  
+  .firstBox,
+  .secondBox {
+    flex: 4 1 4;
+  }
+  
+  .leading {
+    /* padding: 10px; */
+    /* line-height: 2; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: left;
+    font-size: 140%;
+  
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    padding-bottom: 0px;
+}
+
+.listItems {
+    margin-left: 23%;
+}
