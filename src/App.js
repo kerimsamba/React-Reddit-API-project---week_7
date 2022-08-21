@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useEffect, useState} from "react";
+import ArticleContainer from './container/ArticleContainer';
 
 function App() {
+  const subreddits= [
+    {name: "Cats", url: "https://www.reddit.com/r/cats/.json"},
+    {name: "Cats with jobs", url: "https://www.reddit.com/r/Catswithjobs/.json"},
+    {name: "Chonkers", url: "https://www.reddit.com/r/Chonkers/.json"},
+    {name: "Cats are assholes", url: "https://www.reddit.com/r/CatsAreAssholes/.json"}
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <ArticleContainer subreddits={subreddits} />
+      
     </div>
   );
 }
